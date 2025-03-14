@@ -1,25 +1,41 @@
 File Structure: 
 
 /project-root
+
 /backend
+
     server.js           # Node.js Express API to fetch reviews
+
     .env                # Environment variables for API key & Place ID
+
 /frontend
+
     index.html          # Carousel UI
+
     styles.css          # Styles for the carousel
+
     script.js           # Fetches reviews from backend and updates UI
+
 package.json            # Node.js dependencies
+
 README.md
 
+
 IMPORTANT NOTE:
+
     GOOGLE PLACE ID must be enable for GOOGLE API KEY.
+
     GOOGLE API KEY must be biling enabled. 
+
     otherwise it will give 400 status invlid response from API.
+
 
 Backend (Node.js): 
 
 /backend/server.js
+
 The backend is built using Node.js + Express to fetch reviews from Google Places API and return them to the frontend.
+
 
 Do not expose API keys in frontend code.
 The .env file is ignored by Git (.gitignore).
